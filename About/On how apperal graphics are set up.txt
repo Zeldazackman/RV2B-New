@@ -1,0 +1,19 @@
+
+	When the apperel patcher looks at the bulge hediff, it multiplies it's severity by 5 and then floors it.
+
+	This gives it the number 1 at 0.2 severity, 2 at 0.4, and so on, aligning with the severity thresholds in the race patches.
+
+	File names are set up like this; <base>_<racename>_<bodytype>_bulged_<size>
+
+	Racename and size are optional (<base>_<bodytype>_bulged is the minimum)
+
+	<base> is the normal file name for the apparel graphics.
+	<racename> is the pawn's race defname (Human, Anthro, Alien_Cutebold, eg)
+	<bodytype> is the pawn's bodytype (Male, Female, Thin, Hulk, Fat)
+	<size> is 1 - 10. 5 is severity 1.0, where a pawn's prey is as large as they are.
+
+	If <apperel_path>_<pawn_bodytype>_bulged exists in the files (eg, for a female flak jacket; Things/Pawn/Humanlike/Apparel/FlakJacket/FlakJacket_Female_bulged)
+	  then the graphics are replaced as long as the hediff is strong enough.
+
+	If <apperel_path>_<pawn_bodytype>_bulged_<severity_mod> exists (eg, hings/Pawn/Humanlike/Apparel/FlakJacket/FlakJacket_Female_bulged_1)
+	  then graphics are set accordingly; severity_mod is 1 at 0.2 severity, so on.
