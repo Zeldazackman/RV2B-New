@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Avali"]/alienRace</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Avali"]/alienRace/generalSettings/alienPartGenerator</xpath>
+		<value>
+			<bodyAddons>
+				<li>
+					<debug>false</debug>
+					<path>Belly/Empty</path>
+					<shaderType>Transparent</shaderType>
+					<inFrontOfBody>true</inFrontOfBody>
+					<colorChannel>skin</colorChannel>
+					<drawnInBed>false</drawnInBed>
+					<drawSize>0.60</drawSize>
+					<drawSizePortrait>0.60</drawSizePortrait>
+					<hediffGraphics>
+						<RV2B_Bulge>
+							<path>Belly/Empty</path>
+							<severity>
+								<a0.4>Belly/Avali/Belly</a0.4>
+							</severity>
+						</RV2B_Bulge>
+					</hediffGraphics>
+					<offsets>
+						<south>
+							<layerOffset>-0.28</layerOffset>
+							<bodyTypes>
+								<Thin>(0,0)</Thin>
+							</bodyTypes>
+						</south>
+						<north>
+							<layerOffset>-0.28</layerOffset>
+							<bodyTypes>
+								<Thin>(0,0)</Thin>
+							</bodyTypes>
+						</north>
+						<east>
+							<layerOffset>-0.28</layerOffset>
+							<bodyTypes>
+								<Thin>(0,0)</Thin>
+							</bodyTypes>
+						</east>
+					</offsets>
+				</li>
+			</bodyAddons>
+		</value>
+	 </match>
+  </Operation>
+</Patch>

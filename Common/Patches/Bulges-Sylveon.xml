@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Sylveon"]/alienRace</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Sylveon"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+		<value>
+			<li>
+				<drawSize>(0.8, 0.8)</drawSize>
+				<drawSizePortrait>(0.8, 0.8)</drawSizePortrait>
+				<debug>false</debug>
+				<path>Belly/Empty</path>
+				<shaderType>Transparent</shaderType>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<drawnInBed>false</drawnInBed>
+				<drawForMale>true</drawForMale>
+				<drawForFemale>false</drawForFemale>
+				<hediffGraphics>
+					<RV2B_Bulge>
+						<path>Belly/Empty</path>
+						<severity>
+							<a0.4>Belly/Sylveon/Male_Belly</a0.4>
+						</severity>
+					</RV2B_Bulge>
+				</hediffGraphics>
+				<offsets>
+					<south>
+						<layerOffset>-0.28</layerOffset>
+						<bodyTypes>
+							<Thin>(0,0.03)</Thin>
+						</bodyTypes>
+					</south>
+					<north>
+						<layerOffset>-0.28</layerOffset>
+						<bodyTypes>
+							<Thin>(0,0.03)</Thin>
+						</bodyTypes>
+					</north>
+					<east>
+						<layerOffset>-0.28</layerOffset>
+						<bodyTypes>
+							<Thin>(0,0.03)</Thin>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+			<li>
+				<drawSize>(0.8, 0.8)</drawSize>
+				<drawSizePortrait>(0.8, 0.8)</drawSizePortrait>
+				<debug>false</debug>
+				<path>Belly/Empty</path>
+				<shaderType>Transparent</shaderType>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<drawnInBed>false</drawnInBed>
+				<drawForMale>false</drawForMale>
+				<drawForFemale>true</drawForFemale>
+				<hediffGraphics>
+					<RV2B_Bulge>
+						<path>Belly/Empty</path>
+						<severity>
+							<a0.4>Belly/Sylveon/Female_Belly</a0.4>
+						</severity>
+					</RV2B_Bulge>
+				</hediffGraphics>
+				<offsets>
+					<south>
+						<layerOffset>-0.28</layerOffset>
+						<bodyTypes>
+							<Thin>(0,0.03)</Thin>
+						</bodyTypes>
+					</south>
+					<north>
+						<layerOffset>-0.28</layerOffset>
+						<bodyTypes>
+							<Thin>(0,0.03)</Thin>
+						</bodyTypes>
+					</north>
+					<east>
+						<layerOffset>-0.28</layerOffset>
+						<bodyTypes>
+							<Thin>(0,0.03)</Thin>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+		</value>
+	 </match>
+  </Operation> 
+</Patch>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RimVore2.AliasDef[defName="bodyPart_stomach"]/aliases</xpath>
+		<value>
+			<li>
+				<li>SqueedilySpooch</li>
+			</li>
+		</value>
+	</Operation>
+</Patch>

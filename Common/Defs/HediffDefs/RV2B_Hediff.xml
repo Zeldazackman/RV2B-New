@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  
+  <HediffDef>
+    <defName>RV2B_Bulge</defName>
+    <label>bulge</label>
+    <description></description>
+    <hediffClass>RV2_Bulges.Hediff_VoreBulges</hediffClass>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+</Defs>
