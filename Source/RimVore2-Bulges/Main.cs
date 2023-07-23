@@ -15,6 +15,6 @@ namespace RV2_Bulges
 
         public const string ModName = "RV2Bulges";
 
-        public const string Version = "8.88";
+        public const string Version = "8.888";
     }
 }

@@ -19,10 +19,10 @@ namespace RV2_Bulges
              || apparel == null
              || bodyType == null
              || !apparel.Wearer.IsActivePredator()
-             || !apparel.Wearer.health.hediffSet.HasHediff(RV2B_Common.Bulge, false))
+             || !apparel.Wearer.health.hediffSet.HasHediff(RV2B_Common.BellyBulge, false))
                 return;
 
-            float bulgeSeverity = apparel.Wearer.health.hediffSet.GetFirstHediffOfDef(RV2B_Common.Bulge, false).Severity;
+            float bulgeSeverity = apparel.Wearer.health.hediffSet.GetFirstHediffOfDef(RV2B_Common.BellyBulge, false).Severity;
             if (bulgeSeverity >= 0.2f)
             {
                 string path = rec.graphic.path;
@@ -54,7 +54,7 @@ namespace RV2_Bulges
                     }
 
                     if (graphic != null
-                     && (severityMod > 1 
+                    && (severityMod > 1
                       || !ignore02))
                     {
                         rec = new ApparelGraphicRecord(graphic, rec.sourceApparel);
@@ -86,7 +86,7 @@ namespace RV2_Bulges
                     }
 
                     if (graphic2 != null
-                     && (severityMod > 1 
+                     && (severityMod > 1
                       || !ignore02))
                     {
                         rec = new ApparelGraphicRecord(graphic2, rec.sourceApparel);
