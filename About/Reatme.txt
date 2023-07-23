@@ -36,9 +36,8 @@ hah wordplay mfer
    You don't need RimNude or other clothing removers for this; bellies render above everything but outer/shell apparel. Most armor will look a little odd.
    Foxbold also have a patch to let anyone wear their sandcloaks, and graphics are included for all standard body types. They're slightly worse than flak jackets, but they look great with bellies.
 
-   The bulge hediff is applied on vore record population; there's no need for a new save, but preds do need to vore something for bulges to appear.
+   The bulge hediffs are applied on vore record population; there's no need for a new save, or for manual hediff adding, but preds do need to vore something new for bulges to appear.
    Bulges only show up if the hediff is at 0.4 or greater; for humans, this means anything at least the size of a raccoon. It's based on total prey size, so 2 hares work too.
-   Only prey in the stomach, intestines or womb count for this. Sorry; there's only belly graphics here.
    Bigger races need bigger prey for a bulge, and smaller need smaller; snakes (bodysize 2.0) need slightly less than a wolf, and slugcats (bodysize 0.5) just need a single hare.
 
    Don't worry if you don't have a race listed here; The patches are conditional. They don't even throw up an error.
@@ -56,16 +55,52 @@ hah wordplay mfer
    No, really, graphics are all that's needed. Check the other .txt.
 
    If there's a race you'd like support for, let me know. Odds are, they use mostly the same (if not <the> same) body graphics as humans; and thus, the same belly and offsets. Ez pz.
-   If you'd like to try, it may <actualy> be as simple as copying Bulges_Human.xml and replacing the racedefs as needed.
+   If you'd like to try, it may <actualy> be as simple as copying Bulges_Human.xml and replacing "Human" as needed.
 	You'll need to check if they have a alienPartGenerator/bodyAddons portion of their race def, and edit accordingly.
 
-   -Rim-Vali dosn't use HAR. They're immune to vore bulges. I tried messing with them, and it requires transpiling the RimValiCore dlls, and ain't noone got time for that.
+   Rim-Vali dosn't use HAR. They're immune to vore bulges. I tried messing with them, and it requires transpiling the RimValiCore .dlls, and ain't noone got time for that.
 
-   If you're better at art than me (you are), feel free to resprite, help with bulge equipment, anything you want.
+   If you're better at art than me (you are), feel free to resprite, help with bulge equipment, anything you want. Idgaf.
+
+   The hediffs in question, and what body parts/vore types they cover are -
+
+	RV2B_BellyBulge (stomach, intestines, womb, overies, torso)
+	RV2B_StomachBulge (stomach, womb, overies)
+	RV2B_IntestineBulge (intestines)
+	RV2B_WombBulge (womb, overies)
+	RV2B_TestiesBulge (testicles)
+	RV2B_BreastBulge (breasts, cleavage)
+	RV2B_TailBulge (tail, tail throat)
+
+		These can be added to any HAR race via something like-
+		
+				<hediffGraphics>
+					<RV2B_BellyBulge>
+						<path>Belly/Empty</path>
+						<severity>
+							<a0.4>Belly/Base/Belly_Male</a0.4>
+						</severity>
+					</RV2B_BellyBulge>
+				</hediffGraphics>
+
+		- in their <bodyAddons> section.
+
+	Severities should go in descending order.	
+
+	Severity goes from 0 - 2; 1 is same size, 2 is double size.
+
+	BellyBulge is the catch all for most "normal" vore.
+	Lamia, for instance, could use StomachBulge and IntestineBulge to move prey from the human bits to the snek bits as they pass through.
+	Make sure you don't combine them too much; if you're using Stomach, Intestine or WombBulge, BellyBulge is gonna look weird.
+	If you feel there's something missing, just let me know.
+
+	I appologize for adding 7 invisible hediffs to your pawns.
 
    The slugcat race used to be on the workshop (as "slime cats", for some reason), but it seems to have been taken down.
-   The mod included is a resprite that was shared in the comments of it.
+   The mod referenced is a resprite that was shared in the comments of it.
    They're, ah, not exactly balanced. 200% base tame chance, 1% base food poison chance, 66% base damage taken... but slugcat, tho!
+
+   Bellies sometimes fail to update if the pawn is off-map (or eaten) or their body isn't being rendered (beds). This is a purly visual HAR issue, and fixes itself after a little while.
 
    	-Bellies won't show up!
 		[ Only the races listed above have patches; other races don't have bulges. ]
@@ -92,13 +127,13 @@ hah wordplay mfer
 			FlakJacket_<bodytype>_bulged, FlakJacket_<bodytype>_bulged_east, FlakJacket_<bodytype>_bulged_south, FlakJacket_<bodytype>_bulged_north.
 
 		You can also set up race specific graphics, too; FlakJacket_<bodytype>_<pawnrace>_bulged
-		The mod checks if <apparel>_<bodytype>_bulged exists, and applies the graphics as long as the bulged hediff is 0.2 or greater, the same condition as the bulges themselves.
+		The mod checks if <apparel>_<bodytype>_bulged exists, and applies the graphics as long as the bulged hediff is large enough.
+		
 		Check the apperal included for an example.
 
 
 
    If any mod authors deem their race's inclusion in this problematic, let me know and I'll cut support. I swear, I mean no disrespect.
-
 
 
    Now please tell Calypso that she's a very good belly animus vox, and that Rut appreciates every single one of her belly nuzzles very much. 
