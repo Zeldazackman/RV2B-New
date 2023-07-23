@@ -16,12 +16,12 @@
 				<drawSize>0.75</drawSize>
 				<drawSizePortrait>0.75</drawSizePortrait>
 				<hediffGraphics>
-					<RV2B_Bulge>
+					<RV2B_BellyBulge>
 						<path>Belly/Empty</path>
 						<severity>
 							<a0.4>Belly/Base/Belly_Thin</a0.4>
 						</severity>
-					</RV2B_Bulge>
+					</RV2B_BellyBulge>
 				</hediffGraphics>
 				<offsets>
 					<south>
@@ -55,12 +55,12 @@
 				<drawSize>0.75</drawSize>
 				<drawSizePortrait>0.75</drawSizePortrait>
 				<hediffGraphics>
-					<RV2B_Bulge>
+					<RV2B_BellyBulge>
 						<path>Belly/Empty</path>
 						<severity>
 							<a0.4>Belly/Base/Belly_Female</a0.4>
 						</severity>
-					</RV2B_Bulge>
+					</RV2B_BellyBulge>
 				</hediffGraphics>
 				<offsets>
 					<south>

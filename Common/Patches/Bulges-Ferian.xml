@@ -31,12 +31,12 @@
 				<drawnInBed>false</drawnInBed>
 				<bodyTypeRequirement>Male</bodyTypeRequirement>
 				<hediffGraphics>
-					<RV2B_Bulge>
+					<RV2B_BellyBulge>
 						<path>Belly/Empty</path>
 						<severity>
 							<a0.4>Belly/Ferian/Belly_Male</a0.4>
 						</severity>
-					</RV2B_Bulge>
+					</RV2B_BellyBulge>
 				</hediffGraphics>
 				<offsets>
 					<south>
@@ -80,12 +80,12 @@
 				<drawnInBed>false</drawnInBed>
 				<bodyTypeRequirement>Female</bodyTypeRequirement>
 				<hediffGraphics>
-					<RV2B_Bulge>
+					<RV2B_BellyBulge>
 						<path>Belly/Empty</path>
 						<severity>
 							<a0.4>Belly/Ferian/Belly_Female</a0.4>
 						</severity>
-					</RV2B_Bulge>
+					</RV2B_BellyBulge>
 				</hediffGraphics>
 				<offsets>
 					<south>
@@ -129,12 +129,12 @@
 				<drawnInBed>false</drawnInBed>
 				<bodyTypeRequirement>Thin</bodyTypeRequirement>
 				<hediffGraphics>
-					<RV2B_Bulge>
+					<RV2B_BellyBulge>
 						<path>Belly/Empty</path>
 						<severity>
 							<a0.4>Belly/Ferian/Belly_Thin</a0.4>
 						</severity>
-					</RV2B_Bulge>
+					</RV2B_BellyBulge>
 				</hediffGraphics>
 				<offsets>
 					<south>

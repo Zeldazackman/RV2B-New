@@ -17,12 +17,12 @@
 				<drawForMale>true</drawForMale>
 				<drawForFemale>false</drawForFemale>
 				<hediffGraphics>
-					<RV2B_Bulge>
+					<RV2B_BellyBulge>
 						<path>Belly/Empty</path>
 						<severity>
 							<a0.4>Belly/Sylveon/Male_Belly</a0.4>
 						</severity>
-					</RV2B_Bulge>
+					</RV2B_BellyBulge>
 				</hediffGraphics>
 				<offsets>
 					<south>
@@ -57,12 +57,12 @@
 				<drawForMale>false</drawForMale>
 				<drawForFemale>true</drawForFemale>
 				<hediffGraphics>
-					<RV2B_Bulge>
+					<RV2B_BellyBulge>
 						<path>Belly/Empty</path>
 						<severity>
 							<a0.4>Belly/Sylveon/Female_Belly</a0.4>
 						</severity>
-					</RV2B_Bulge>
+					</RV2B_BellyBulge>
 				</hediffGraphics>
 				<offsets>
 					<south>

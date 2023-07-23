@@ -16,12 +16,12 @@
 					<drawSize>0.80</drawSize>
 					<drawSizePortrait>1.00</drawSizePortrait>
 					<hediffGraphics>
-						<RV2B_Bulge>
+						<RV2B_BellyBulge>
 							<path>Belly/Empty</path>
 							<severity>
 								<a0.4>Belly/SlugCat/Belly</a0.4>
 							</severity>
-						</RV2B_Bulge>
+						</RV2B_BellyBulge>
 					</hediffGraphics>
 					<offsets>
 						<south>
