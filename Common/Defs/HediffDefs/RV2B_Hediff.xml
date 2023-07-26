@@ -5,7 +5,7 @@
   <HediffDef>
     <defName>RV2B_Bulge</defName>
     <label>bulge</label>
-    <description></description>
+    <description>Redundant.</description>
     <hediffClass>RV2_Bulges.RV2B_Hediff_VoreBulges</hediffClass>
     <initialSeverity>0.00</initialSeverity>
     <maxSeverity>0.00</maxSeverity>
@@ -15,7 +15,7 @@
   <HediffDef>
     <defName>RV2B_BellyBulge</defName>
     <label>Belly Bulge</label>
-    <description></description>
+    <description>Hediff that scales with prey in torso area.</description>
     <hediffClass>RV2_Bulges.RV2B_Hediff_VoreBulges</hediffClass>
     <initialSeverity>0.01</initialSeverity>
     <maxSeverity>2.00</maxSeverity>
@@ -23,7 +23,7 @@
   <HediffDef>
     <defName>RV2B_StomachBulge</defName>
     <label>Stomach Bulge</label>
-    <description></description>
+    <description>Hediff that scales with prey in stomach.</description>
     <hediffClass>RV2_Bulges.RV2B_Hediff_VoreBulges</hediffClass>
     <initialSeverity>0.01</initialSeverity>
     <maxSeverity>2.00</maxSeverity>
@@ -31,7 +31,7 @@
   <HediffDef>
     <defName>RV2B_IntestineBulge</defName>
     <label>Intestine Bulge</label>
-    <description></description>
+    <description>Hediff that scales with prey in intestines.</description>
     <hediffClass>RV2_Bulges.RV2B_Hediff_VoreBulges</hediffClass>
     <initialSeverity>0.01</initialSeverity>
     <maxSeverity>2.00</maxSeverity>
@@ -39,7 +39,7 @@
   <HediffDef>
     <defName>RV2B_WombBulge</defName>
     <label>Womb Bulge</label>
-    <description></description>
+    <description>Hediff that scales with prey in womb.</description>
     <hediffClass>RV2_Bulges.RV2B_Hediff_VoreBulges</hediffClass>
     <initialSeverity>0.01</initialSeverity>
     <maxSeverity>2.00</maxSeverity>
@@ -47,7 +47,7 @@
   <HediffDef>
     <defName>RV2B_TestiesBulge</defName>
     <label>Testies Bulge</label>
-    <description></description>
+    <description>Hediff that scales with prey in testicles.</description>
     <hediffClass>RV2_Bulges.RV2B_Hediff_VoreBulges</hediffClass>
     <initialSeverity>0.01</initialSeverity>
     <maxSeverity>2.00</maxSeverity>
@@ -55,7 +55,7 @@
   <HediffDef>
     <defName>RV2B_BreastBulge</defName>
     <label>Breast Bulge</label>
-    <description></description>
+    <description>Hediff that scales with prey in breasts.</description>
     <hediffClass>RV2_Bulges.RV2B_Hediff_VoreBulges</hediffClass>
     <initialSeverity>0.01</initialSeverity>
     <maxSeverity>2.00</maxSeverity>
@@ -63,7 +63,7 @@
   <HediffDef>
     <defName>RV2B_TailBulge</defName>
     <label>Tail Bulge</label>
-    <description></description>
+    <description>Hediff that scales with prey in tail.</description>
     <hediffClass>RV2_Bulges.RV2B_Hediff_VoreBulges</hediffClass>
     <initialSeverity>0.01</initialSeverity>
     <maxSeverity>2.00</maxSeverity>
