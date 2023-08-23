@@ -188,6 +188,43 @@
 					</east>
 				</offsets>
 			</li>
+			<li>
+				<debug>false</debug>
+				<path>Belly/Empty</path>
+				<shaderType>Transparent</shaderType>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<drawnInBed>false</drawnInBed>
+				<bodyTypeRequirement>FemaleBB</bodyTypeRequirement>
+				<hediffGraphics>
+					<RV2B_BellyBulge>
+						<path>Belly/Empty</path>
+						<severity>
+							<a0.4>Belly/Base/Belly_Female</a0.4>
+						</severity>
+					</RV2B_BellyBulge>
+				</hediffGraphics>
+				<offsets>
+					<south>
+						<layerOffset>-0.28</layerOffset>
+						<bodyTypes>
+							<Female>(0,0)</Female>
+						</bodyTypes>
+					</south>
+					<north>
+						<layerOffset>-0.28</layerOffset>
+						<bodyTypes>
+							<Female>(0,0)</Female>
+						</bodyTypes>
+					</north>
+					<east>
+						<layerOffset>-0.28</layerOffset>
+						<bodyTypes>
+							<Female>(0.025,0.01)</Female>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
 		</value>
 	</Operation>
 </Patch>
