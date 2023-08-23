@@ -12,6 +12,8 @@
   <modDependencies>
     <li>
       <packageId>Nabber.RimVore2</packageId>
+      <displayName>RimVore2</displayName>
+      <downloadUrl>https://gitlab.com/Nabber/rimvore-2</downloadUrl>
     </li>
     <li>
       <packageId>erdelf.HumanoidAlienRaces</packageId>
