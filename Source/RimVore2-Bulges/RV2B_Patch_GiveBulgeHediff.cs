@@ -1,5 +1,7 @@
 using HarmonyLib;
+using RimWorld;
 using RimVore2;
+using Verse;
 
 namespace RV2_Bulges
 {
@@ -11,19 +13,14 @@ namespace RV2_Bulges
         {
             if (record.Predator.IsHumanoid())
             {
-                if (!record.Predator.health.hediffSet.HasHediff(RV2B_Common.BellyBulge, false))
-                    record.Predator.health.AddHediff(RV2B_Common.BellyBulge, null, null, null);
-                if (!record.Predator.health.hediffSet.HasHediff(RV2B_Common.StomachBulge, false))
-                    record.Predator.health.AddHediff(RV2B_Common.StomachBulge, null, null, null);
-                if (!record.Predator.health.hediffSet.HasHediff(RV2B_Common.WombBulge, false))
-                    record.Predator.health.AddHediff(RV2B_Common.WombBulge, null, null, null);
-                if (!record.Predator.health.hediffSet.HasHediff(RV2B_Common.TestiesBulge, false))
-                    record.Predator.health.AddHediff(RV2B_Common.TestiesBulge, null, null, null);
-                if (!record.Predator.health.hediffSet.HasHediff(RV2B_Common.BreastBulge, false))
-                    record.Predator.health.AddHediff(RV2B_Common.BreastBulge, null, null, null);
-                if (!record.Predator.health.hediffSet.HasHediff(RV2B_Common.TailBulge, false))
-                    record.Predator.health.AddHediff(RV2B_Common.TailBulge, null, null, null);
+                foreach (HediffDef hediff in RV2B_Common.BulgeHediffs)
+                {
+
+                    if (!record.Predator.health.hediffSet.HasHediff(hediff))
+                        record.Predator.health.AddHediff(hediff);
+
+                }
             }
-        } // I know we're supposed to add the hediffs on pawn creation, but this works as a drop-in much better
-    }     // And I know this looks real ugly; I'm not sure there's a cleaner way to do this
+        }
+    }
 }

@@ -1,25 +1,26 @@
-using RimVore2;
+﻿using RimVore2;
 using RimWorld;
 using System;
 using System.Linq;
 using Verse;
 
-namespace RV2_Bulges
+namespace RimVore2_Bulges
 {
-    public class RV2B_Hediff_VoreBulges : Hediff
+    internal class RV2B_Hediff_AdvVoreBulges : Hediff
     {
         public override float Severity
         {
             get
             {
-                string[] validParts = new string[0];
-                float num = severityInt = 0.01f;
-                float mod;
+                float totalPrey = 0f;
+                float goalPriority = 0.0f;
+                float bodyType = 0.00f;
+                string[] validParts;
                 if (pawn.IsActivePredator()
                  && pawn.PawnData(true) != null
                  && pawn.PawnData(true).VoreTracker != null)
                 {
-                    if (Label == "Belly Bulge")
+                    if (Label == "Belly")
                         validParts = new string[5] {
                             "stomach",
                             "womb",
@@ -27,66 +28,73 @@ namespace RV2_Bulges
                             "intestines",
                             "torso"
                         };
-                    if (Label == "Stomach Bulge")
-                        validParts = new string[3] {
-                            "stomach",
-                            "womb",
-                            "oraries"
+                    if (Label == "Stomach")
+                        validParts = new string[1] {
+                            "stomach"
                         };
-                    if (Label == "Intestine Bulge")
+                    if (Label == "Intestine")
                         validParts = new string[1] {
                             "intestines"
                         };
-                    if (Label == "Womb Bulge")
+                    if (Label == "Womb")
                         validParts = new string[2] {
                             "womb",
                             "oraries"
                         };
-                    if (Label == "Cock Bulge")
+                    if (Label == "Cock")
                         validParts = new string[1] {
                             "cock"
                         };
-                    if (Label == "Testies Bulge")
+                    if (Label == "Testies")
                         validParts = new string[1] {
                             "testicles"
                         };
-                    if (Label == "Breast Bulge")
+                    if (Label == "Breasts")
                         validParts = new string[2] {
                             "breast",
                             "cleaveage"
                         };
-                    if (Label == "Tail Bulge")
+                    if (Label == "Tail")
                         validParts = new string[2] {
                             "tail",
                             "tail throat"
                         };
-                    if (Label == "bulge")
+                    else
                         return 0f;
 
                     foreach (VoreTrackerRecord voreTrackerRecord in pawn.PawnData(true).VoreTracker.VoreTrackerRecords)
                     {
                         if (validParts.Contains(voreTrackerRecord.CurrentVoreStage.def.DisplayPartName))
                         {
-                            mod = 1f;
-                            if (voreTrackerRecord.Prey.IsHumanoid())
-                                mod = (voreTrackerRecord.Prey.story.bodyType == BodyTypeDefOf.Fat ? 1.25f : (voreTrackerRecord.Prey.story.bodyType == BodyTypeDefOf.Thin ? 0.8f : 1f));
-                            num += voreTrackerRecord.Prey.BodySize * mod;
+                            totalPrey += 1f;
+                            String goal = voreTrackerRecord.CurrentVoreStage.def.partGoal.ToLower();
+                            if (goalPriority < 0.1f && goal == "hold" || goal == "store" || goal == "heal" || goal == "pass")
+                                goalPriority = 0.1f;
+                            if (goalPriority < 0.2f && goal == "pleasure" || goal == "warm up")
+                                goalPriority = 0.2f;
+                            if (goalPriority < 0.3f && goal == "digest" || goal == "convert" || goal == "dissolve" || goal == "process")
+                                goalPriority = 0.3f;
+
+                            if (voreTrackerRecord.Prey.story.bodyType == BodyTypeDefOf.Female)
+                                bodyType = 0.01f;
+                            if (voreTrackerRecord.Prey.story.bodyType == BodyTypeDefOf.Thin)
+                                bodyType = 0.02f;
+                            if (voreTrackerRecord.Prey.story.bodyType == BodyTypeDefOf.Hulk)
+                                bodyType = 0.03f;
+                            if (voreTrackerRecord.Prey.story.bodyType == BodyTypeDefOf.Fat)
+                                bodyType = 0.04f;
+
                             if (voreTrackerRecord.Prey.IsActivePredator()
                              && voreTrackerRecord.Prey.PawnData(true) != null
                              && voreTrackerRecord.Prey.PawnData(true).VoreTracker != null)
                                 foreach (VoreTrackerRecord voreTrackerRecord2 in voreTrackerRecord.Prey.PawnData(true).VoreTracker.VoreTrackerRecords)
                                 {
-                                    mod = 1f;
-                                    if (voreTrackerRecord2.Prey.IsHumanoid())
-                                        mod = (voreTrackerRecord2.Prey.story.bodyType == BodyTypeDefOf.Fat ? 1.25f : (voreTrackerRecord2.Prey.story.bodyType == BodyTypeDefOf.Thin ? 0.8f : 1f));
-                                    num += voreTrackerRecord2.Prey.BodySize * mod;
+                                    totalPrey += 1f;
                                 }
                         }
-
-                        severityInt = Math.Min(2f, num / pawn.BodySize);
                     }
                 }
-                return severityInt;
+                return totalPrey + goalPriority + bodyType + Rand.Range(0.000f, 0.009f);
             }
         }
 
@@ -94,8 +102,8 @@ namespace RV2_Bulges
         {
             get
             {
-                //if (Prefs.DevMode)
-                //    return true;
+                if (Prefs.DevMode)
+                    return true;
 
                 return false;
             }
