@@ -4,7 +4,7 @@ using System;
 using System.Linq;
 using Verse;
 
-namespace RimVore2_Bulges
+namespace RV2_Bulges
 {
     internal class RV2B_Hediff_AdvVoreBulges : Hediff
     {
