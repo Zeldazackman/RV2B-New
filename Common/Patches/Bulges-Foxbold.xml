@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AFoxbold"]/alienRace/raceRestriction</xpath>
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AFoxbold"]/alienRace/raceRestriction/apparelList/li[2]</xpath>
 	   <match Class="PatchOperationRemove">
-		  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AFoxbold"]/alienRace/raceRestriction/apparelList</xpath>
-		  <value>
-			  <li>Apparel_SandCloak</li>	
-		  </value>
+		  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AFoxbold"]/alienRace/raceRestriction/apparelList/li[2]</xpath>
 	   </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
