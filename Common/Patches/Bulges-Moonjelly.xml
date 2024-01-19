@@ -8,7 +8,7 @@
 			<bodyAddons>
 				<li>
 					<debug>false</debug>
-					<tex>Belly/Empty</tex>
+					<path>Belly/Empty</path>
 					<shaderType>Transparent</shaderType>
 					<inFrontOfBody>true</inFrontOfBody>
 					<colorChannel>skin</colorChannel>
@@ -47,7 +47,7 @@
 				</li>
 				<li>
 					<debug>false</debug>
-					<tex>Belly/Empty</tex>
+					<path>Belly/Empty</path>
 					<shaderType>Transparent</shaderType>
 					<inFrontOfBody>true</inFrontOfBody>
 					<colorChannel>skin</colorChannel>
