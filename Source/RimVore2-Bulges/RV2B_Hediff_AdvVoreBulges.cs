@@ -1,4 +1,4 @@
-﻿using RimVore2;
+using RimVore2;
 using RimWorld;
 using System;
 using System.Linq;
@@ -67,13 +67,16 @@ namespace RV2_Bulges
                         if (validParts.Contains(voreTrackerRecord.CurrentVoreStage.def.DisplayPartName))
                         {
                             totalPrey += 1f;
-                            String goal = voreTrackerRecord.CurrentVoreStage.def.partGoal.ToLower();
-                            if (goalPriority < 0.1f && goal == "hold" || goal == "store" || goal == "heal" || goal == "pass")
+                            String goal = voreTrackerRecord.CurrentVoreStage.def.partGoal.ToString().ToLower();
+                            goalPriority = 0.0f;
+                            if (!voreTrackerRecord.Prey.Dead)
+                            {
                                 goalPriority = 0.1f;
-                            if (goalPriority < 0.2f && goal == "pleasure" || goal == "warm up")
-                                goalPriority = 0.2f;
-                            if (goalPriority < 0.3f && goal == "digest" || goal == "convert" || goal == "dissolve" || goal == "process")
-                                goalPriority = 0.3f;
+                                if (goalPriority < 0.2f && goal == "pleasure" || goal == "warmup")
+                                    goalPriority = 0.2f;
+                                if (goalPriority < 0.3f && goal == "digest" || goal == "convert" || goal == "dissolve")
+                                    goalPriority = 0.3f;
+                            }
 
                             if (voreTrackerRecord.Prey.story.bodyType == BodyTypeDefOf.Female)
                                 bodyType = 0.01f;
