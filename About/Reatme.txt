@@ -4,51 +4,48 @@ hah wordplay mfer
 
     Graphics and patches included for -
 
-	Humans
-	AA's Redwall Races (lite) 		https://steamcommunity.com/sharedfiles/filedetails/?id=2732768527
-	Anthro Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2455173560
-	Apini Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2204437968
+	Humans					https://store.steampowered.com/app/294100/RimWorld/
+	AA's Redwall Races (lite or full) 	https://steamcommunity.com/sharedfiles/filedetails/?id=2732768527
+	Anthros					https://steamcommunity.com/sharedfiles/filedetails/?id=2455173560
+	Apini					https://steamcommunity.com/sharedfiles/filedetails/?id=2204437968
 	Kobolds of the Rim			https://steamcommunity.com/sharedfiles/filedetails/?id=2569480318
 	Pawnbolds				https://steamcommunity.com/sharedfiles/filedetails/?id=2104039874
 	Cutebolds				https://steamcommunity.com/sharedfiles/filedetails/?id=2147295726
-	Dogbolds				https://steamcommunity.com/sharedfiles/filedetails/?id=2436521813
 	Foxbolds				https://steamcommunity.com/sharedfiles/filedetails/?id=2438217201
+	Dogbolds				https://steamcommunity.com/sharedfiles/filedetails/?id=2436521813
+	Silvalise Kobolds 			https://steamcommunity.com/sharedfiles/filedetails/?id=2438221336
 	The Eastern Dragons			https://steamcommunity.com/sharedfiles/filedetails/?id=2672488311
 	Irkin					https://steamcommunity.com/sharedfiles/filedetails/?id=2848138140
-	Moonjelly Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2534483347			
-	Snake Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2677486831
-	Klickmala Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2489566199
-	Slither Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2489565764
-	Ikquan Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2489566052
-	Frosty Dragon Race			https://steamcommunity.com/sharedfiles/filedetails/?id=2488920026
+	Moonjellies				https://steamcommunity.com/sharedfiles/filedetails/?id=2534483347			
+	Feral Snakes				https://steamcommunity.com/sharedfiles/filedetails/?id=2677486831
+	Klickmala				https://steamcommunity.com/sharedfiles/filedetails/?id=2489566199
+	Slithers				https://steamcommunity.com/sharedfiles/filedetails/?id=2489565764
+	Ikquan					https://steamcommunity.com/sharedfiles/filedetails/?id=2489566052
+	Frosty Dragons				https://steamcommunity.com/sharedfiles/filedetails/?id=2488920026
 	Marley's Protogens			https://steamcommunity.com/sharedfiles/filedetails/?id=1716136868
 	Avali (not Rim-Vali, sorry)		https://steamcommunity.com/sharedfiles/filedetails/?id=2668670571
-	Chiropterans of RimWorld (Bats!)    	https://steamcommunity.com/sharedfiles/filedetails/?id=2577222782
 	Hollow Knight Vessels			https://steamcommunity.com/sharedfiles/filedetails/?id=2334539395
-	Ferian Race				https://steamcommunity.com/sharedfiles/filedetails/?id=1611790118
+	Ferian					https://steamcommunity.com/sharedfiles/filedetails/?id=1611790118
 	Lucario and Riolu			https://steamcommunity.com/sharedfiles/filedetails/?id=2856803587
-	Sylveon	Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2800815182
-	Vaporeon Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2900807338
-	Umbreon Race				https://steamcommunity.com/sharedfiles/filedetails/?id=2832842628
-	Braixen and Delphox			https://steamcommunity.com/sharedfiles/filedetails/?id=2424930825
-	Slugcats 				https://github.com/2ScoopsPlz/Rimworld-Slugcat-Edits/tree/main/__LocalCopy_Slime%20cat_-29-5
+	Yanzihko's Eeveelutions 		https://steamcommunity.com/workshop/filedetails/?id=3037603371
+	Compass's Verse Species			https://steamcommunity.com/workshop/filedetails/?id=2071580435
+	Slugcats 				
 
    You don't need RimNude or other clothing removers for this; bellies render above everything but outer/shell apparel. Most armor will look a little odd.
    Foxbold also have a patch to let anyone wear their sandcloaks, and graphics are included for all standard body types. They're slightly worse than flak jackets, but they look great with bellies.
 
    The bulge hediffs are applied on vore record population; there's no need for a new save, or for manual hediff adding, but preds do need to vore something new for bulges to appear.
    Bulges only show up if the hediff is at 0.4 or greater; for humans, this means anything at least the size of a raccoon. It's based on total prey size, so 2 hares work too.
-   Bigger races need bigger prey for a bulge, and smaller need smaller; snakes (bodysize 2.0) need slightly less than a wolf, and slugcats (bodysize 0.5) just need a single hare.
+   Bigger races need bigger prey for a bulge, and smaller need smaller; snakes (bodysize 2.0) need slightly less than a wolf, and eevees (bodysize 0.5) just need a single hare.
 
    Don't worry if you don't have a race listed here; The patches are conditional. They don't even throw up an error.
    This all shouldn't affect TPS that much.
 
-   The aliases have been patched so that Irkin can nom (they don't have stomachs, they have squeedilyspooches).
+   The aliases have been patched so that Irkin can nom as they don't have stomachs, they have squeedilyspooches. At all times, respect the lore.
 
    Ferian have been patched to allow grappling.
 
-   Apini and Azuri have been patched to have their heads moved up a little, showing a bit more of their torso (read: belly) and generaly looking a little closer to the artwork for them. 
-   The neck fluff apparel was moved to match.
+   Apini and Azuri have optional textures in case you're running the Bumblebee retexture.
    The apron was patched to be on the outer/shell layer, so they render over bellies. This shouldn't affect what they can equip.
 
    All apparel can be set up to have bulged versions; the only thing stopping it is lack of art. Currently, there's only a few; Parkas, apini aprons and flak vests, and the vessel cloaks and dress.
@@ -58,34 +55,64 @@ hah wordplay mfer
    If you'd like to try, it may <actualy> be as simple as copying Bulges_Human.xml and replacing "Human" as needed.
 	You'll need to check if they have a alienPartGenerator/bodyAddons portion of their race def, and edit accordingly.
 
-   Rim-Vali dosn't use HAR. They're immune to vore bulges. I tried messing with them, and it requires transpiling the RimValiCore .dlls, and ain't noone got time for that.
+   Rim-Vali dosn't use HAR. They're immune to vore bulges. I tried messing with them, and it requires transpiling the RimValiCore .dlls.
 
    If you're better at art than me (you are), feel free to resprite, help with bulge equipment, anything you want. Idgaf.
 
    The hediffs in question, and what body parts/vore types they cover are -
 
 	RV2B_BellyBulge (stomach, intestines, womb, overies, torso)
-	RV2B_StomachBulge (stomach, womb, overies)
+	RV2B_StomachBulge (stomach)
 	RV2B_IntestineBulge (intestines)
 	RV2B_WombBulge (womb, overies)
 	RV2B_TestiesBulge (testicles)
 	RV2B_BreastBulge (breasts, cleavage)
 	RV2B_TailBulge (tail, tail throat)
 
-		These can be added to any HAR race via something like-
+		The bulges are, functionaly, just a HAR bodyaddon. They can be added to any HAR race via something like-
 		
-				<hediffGraphics>
-					<RV2B_BellyBulge>
-						<path>Belly/Empty</path>
-						<severity>
-							<a0.4>Belly/Base/Belly_Male</a0.4>
-						</severity>
-					</RV2B_BellyBulge>
-				</hediffGraphics>
+		1.4 syntax -
+			<hediffGraphics>
+				<RV2B_BellyBulge>
+				<path>Belly/Empty</path>
+					<severity>
+						<a0.4>
+							<bodytypeGraphics>
+								<Male>Belly/Base/Belly_Male</Male>
+								<Female>Belly/Base/Belly_Female</Female>
+								<Thin>Belly/Base/Belly_Thin</Thin>
+								<Hulk>Belly/Base/Belly_Hulk</Hulk>
+								<Fat>Belly/Base/Belly_Fat</Fat>
+							</bodytypeGraphics>
+						</a0.4>
+					</severity>
+				</RV2B_BellyBulge>
+			</hediffGraphics>
+		
+		1.5 syntax -
+
+			<extendedGraphics>
+				<Hediff For="RV2B_BellyBulge">
+					<path>Belly/Empty</path>
+					<extendedGraphics>
+						<Severity For="0.4">
+							<BodyType For="Male">Belly/Base/Belly_Male</BodyType>
+							<BodyType For="Female">Belly/Base/Belly_Female</BodyType>
+							<BodyType For="Thin">Belly/Base/Belly_Thin</BodyType>
+							<BodyType For="Hulk">Belly/Base/Belly_Hulk</BodyType>
+							<BodyType For="Fat">Belly/Base/Belly_Fat</BodyType>
+						</Severity>
+					</extendedGraphics>
+				</Hediff>
+			</extendedGraphics>
 
 		- in their <bodyAddons> section.
 
-	Severities should go in descending order.	
+	Severities should go in descending order.
+	(eg: <a0.8>
+	     <a0.6>
+	     <a0.4>
+	)	
 
 	Severity goes from 0 - 2; 1 is same size, 2 is double size.
 
@@ -96,21 +123,15 @@ hah wordplay mfer
 
 	I appologize for adding 7 invisible hediffs to your pawns.
 
-   The slugcat race used to be on the workshop (as "slime cats", for some reason), but it seems to have been taken down.
-   The mod referenced is a resprite that was shared in the comments of it.
-   They're, ah, not exactly balanced. 200% base tame chance, 1% base food poison chance, 66% base damage taken... but slugcat, tho!
-
-   Bellies sometimes fail to update if the pawn is off-map (or eaten) or their body isn't being rendered (beds). This is a purly visual HAR issue, and fixes itself after a little while.
+   Bellies sometimes fail to update, especialy if the pawn is off-map (or eaten) or their body isn't being rendered (beds). This is a purly visual HAR issue, and fixes itself after a little while.
 
    	-Bellies won't show up!
 		[ Only the races listed above have patches; other races don't have bulges. ]
 		If there's one you desperatly need, let me know; or, give a hand at your own patch. They're not too hard to make, and a lot of races can use the default belly.
-		The patches included look, uh, odd, but they work for both 1.3 and 1.4 without needing seperate loadfolders.
-		I did this because it's convienient, and NOT because I started on this before 1.4 was a thing, found they worked anyway, and I'm lazy.
 
 		[ Bellies only show up for the, uh, well, belly. ]
-		Turning someone into tailstuffing will not give you a belly. Prey have to be in the [ stomach, intesines, womb or torso ].
-     		Also, prey need to be big enough. For a human, raccoons (bodysize 0.4) or bigger are needed; for slugcats, hares (bodysize 0.2) are good enough.
+		Turning someone into tailstuffing or being in the middle of swallowing will not give you a belly. Prey have to be in the [ stomach, intesines, womb or torso ].
+     		Also, prey need to be big enough. For a human (bodysize 1.0), raccoons (bodysize 0.4) or bigger are needed; for eevees (bodysize 0.5), hares (bodysize 0.2) are good enough.
 		It's cumulative, so 4 rats will work too.
 		There's only 1 belly graphic, but more could be added (if I were better at art /shrug)
 
