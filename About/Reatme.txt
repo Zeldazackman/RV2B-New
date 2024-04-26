@@ -88,25 +88,6 @@ hah wordplay mfer
 					</severity>
 				</RV2B_BellyBulge>
 			</hediffGraphics>
-		
-		1.5 syntax -
-
-			<extendedGraphics>
-				<Hediff For="RV2B_BellyBulge">
-					<path>Belly/Empty</path>
-					<extendedGraphics>
-						<Severity For="0.4">
-							<BodyType For="Male">Belly/Base/Belly_Male</BodyType>
-							<BodyType For="Female">Belly/Base/Belly_Female</BodyType>
-							<BodyType For="Thin">Belly/Base/Belly_Thin</BodyType>
-							<BodyType For="Hulk">Belly/Base/Belly_Hulk</BodyType>
-							<BodyType For="Fat">Belly/Base/Belly_Fat</BodyType>
-						</Severity>
-					</extendedGraphics>
-				</Hediff>
-			</extendedGraphics>
-
-		- in their <bodyAddons> section.
 
 	Severities should go in descending order.
 	(eg: <a0.8>
@@ -152,7 +133,8 @@ hah wordplay mfer
 		
 		Check the apperal included for an example.
 
-
+	-Is this set up for HAR 1.5's extention graphics syntax?
+		NO, and after 6 hours straight of fucking with them I cannot, for the life of me, get them to work. At all. In any capacity.
 
    If any mod authors deem their race's inclusion in this problematic, let me know and I'll cut support. I swear, I mean no disrespect.
 
