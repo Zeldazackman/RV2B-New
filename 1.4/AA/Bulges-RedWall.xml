@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="RWLBadger"]/alienRace</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="RWLBadger" or defName="RWLDormouse" or defName="RWLErmine" or defName="RWLFerret" or defName="RWLGreyFox" or defName="RWLGreySquirrel" or defName="RWLHare" or defName="RWLHedgehog" or defName="RWLMarten" or defName="RWLMole" or defName="RWLMouse" or defName="RWLRabbit" or defName="RWLRat" or defName="RWLRedFox" or defName="RWLRedSquirrel" or defName="RWLRiverOtter" or defName="RWLSable" or defName="RWLSeaOtter" or defName="RWLShrew" or defName="RWLStoat" or defName="RWLTreeRat" or defName="RWLWaterVole" or defName="RWLWearet" or defName="RWLWeasel" or defName="RWLWildcat" or defName="RWLWolverine"]/alienRace/generalSettings/alienPartGenerator</xpath>
+		<value>
+			<bodyAddons>
+				<li>
+					<debug>false</debug>
+					<path>Belly/Empty</path>
+					<shaderType>Transparent</shaderType>
+					<inFrontOfBody>true</inFrontOfBody>
+					<colorChannel>skin</colorChannel>
+					<drawnInBed>false</drawnInBed>
+					<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+					<hediffGraphics>
+						<RV2B_BellyBulge>
+							<severity>
+								<a0.4>
+									<bodytypeGraphics>
+										<Male>Belly/Base/Belly_Male</Male>
+										<Female>Belly/Base/Belly_Female</Female>
+										<Thin>Belly/Base/Belly_Thin</Thin>
+										<Hulk>Belly/Base/Belly_Hulk</Hulk>
+										<Fat>Belly/Base/Belly_Fat</Fat>
+									</bodytypeGraphics>
+								</a0.4>
+							</severity>
+						</RV2B_BellyBulge>
+					</hediffGraphics>
+					<offsets>
+						<south>
+							<layerOffset>-0.28</layerOffset>
+							<bodyTypes>
+								<Male>(0,0)</Male>
+							</bodyTypes>
+						</south>
+						<north>
+							<layerOffset>-0.28</layerOffset>
+							<bodyTypes>
+								<Male>(0,0)</Male>
+							</bodyTypes>
+						</north>
+						<east>
+							<layerOffset>-0.28</layerOffset>
+							<bodyTypes>
+								<Male>(0.025,0.01)</Male>
+							</bodyTypes>
+						</east>
+					</offsets>
+				</li>
+			</bodyAddons>
+		</value>
+	 </match>
+  </Operation> 
+</Patch>
