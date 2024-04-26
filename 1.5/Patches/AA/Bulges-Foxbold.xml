@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AFoxbold"]/alienRace/raceRestriction/apparelList</xpath>
+	   <match Class="PatchOperationRemove">
+		  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AFoxbold"]/alienRace/raceRestriction/apparelList</xpath>
+		  <value>
+			  <li>Apparel_SandCloak</li>	
+		  </value>
+	   </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AFoxbold"]/alienRace</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="AFoxbold"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+		<value>
+			<li>
+				<name>Belly</name>
+				<userCustomizable>false</userCustomizable>
+				<allowColorOverride>false</allowColorOverride>
+				<path>Belly/Empty</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<conditions>
+					<Posture>
+						<drawnInBed>false</drawnInBed>
+					</Posture>
+					<RotStage>Fresh</RotStage>
+				</conditions>
+				<extendedGraphics>
+					<Hediff For="RV2B_BellyBulge">
+						<path>Belly/Empty</path>
+						<extendedGraphics>
+							<Severity For="0.4">
+								<BodyType For="Male">Belly/Foxbold/Belly_Male</BodyType>
+								<BodyType For="Female">Belly/Foxbold/Belly_Female</BodyType>
+							</Severity>
+						</extendedGraphics>
+					</Hediff>
+				</extendedGraphics>
+			</li>
+		</value>
+	 </match>
+  </Operation>
+</Patch>
