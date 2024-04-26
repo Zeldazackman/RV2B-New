@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Yanz_Flareon"]/alienRace</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Yanz_Flareon"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+		<value>
+			<li>
+				<debug>false</debug>
+				<path>Belly/Empty</path>
+				<shaderType>Transparent</shaderType>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<drawnInBed>false</drawnInBed>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<hediffGraphics>
+					<RV2B_BellyBulge>
+						<severity>
+							<a0.4>
+								<genderGraphics>
+									<Male>Belly/Flareon/Male_Belly</Male>
+									<Female>Belly/Flareon/Female_Belly</Female>
+								</genderGraphics>
+							</a0.4>
+						</severity>
+					</RV2B_BellyBulge>
+				</hediffGraphics>
+			</li>
+		</value>
+	 </match>
+  </Operation> 
+</Patch>

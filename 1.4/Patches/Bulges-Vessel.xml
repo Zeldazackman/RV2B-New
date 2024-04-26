@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Vessel"]/alienRace</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Vessel"]/alienRace/generalSettings/alienPartGenerator</xpath>
+		<value>
+			<bodyAddons>
+				<li>
+					<debug>false</debug>
+					<path>Belly/Empty</path>
+					<shaderType>Transparent</shaderType>
+					<inFrontOfBody>true</inFrontOfBody>
+					<colorChannel>skin</colorChannel>
+					<drawnInBed>false</drawnInBed>
+					<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+					<hediffGraphics>
+						<RV2B_BellyBulge>
+							<severity>
+								<a0.4>
+									<bodytypeGraphics>
+										<Thin>Belly/Vessel/Belly</Thin>
+									</bodytypeGraphics>
+								</a0.4>
+							</severity>
+						</RV2B_BellyBulge>
+					</hediffGraphics>
+				</li>
+			</bodyAddons>
+		</value>
+	 </match>
+  </Operation> 
+</Patch>

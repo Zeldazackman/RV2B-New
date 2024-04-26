@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Apini"]/alienRace</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Apini"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+		<value>
+			<li>
+				<debug>false</debug>
+				<path>Belly/Empty</path>
+				<shaderType>Transparent</shaderType>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<drawnInBed>false</drawnInBed>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<hediffGraphics>
+					<RV2B_BellyBulge>
+						<severity>
+							<a0.4>
+								<bodytypeGraphics>
+									<Female>Belly/Apini/Belly</Female>
+								</bodytypeGraphics>
+							</a0.4>
+						</severity>
+					</RV2B_BellyBulge>
+				</hediffGraphics>
+			</li>
+		</value>
+	 </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Azuri"]/alienRace</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Azuri"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+		<value>
+			<li>
+				<debug>false</debug>
+				<path>Belly/Empty</path>
+				<shaderType>Transparent</shaderType>
+				<inFrontOfBody>true</inFrontOfBody>
+				<colorChannel>skin</colorChannel>
+				<drawnInBed>false</drawnInBed>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<hediffGraphics>
+					<RV2B_BellyBulge>
+						<severity>
+							<a0.4>
+								<bodytypeGraphics>
+									<Female>Belly/Azuri/Belly</Female>
+								</bodytypeGraphics>
+							</a0.4>
+						</severity>
+					</RV2B_BellyBulge>
+				</hediffGraphics>
+			</li>
+		</value>
+	 </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ApiniApron"]/apparel</xpath>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ApiniApron"]/apparel/layers</xpath>
+		<value>
+			<li>Middle</li>
+		</value>
+	 </match>
+  </Operation>
+</Patch>
