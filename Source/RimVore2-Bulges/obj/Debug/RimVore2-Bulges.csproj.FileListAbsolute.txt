@@ -1,0 +1,6 @@
+F:\Steam\steamapps\common\RimWorld\RimVore2-Bulges\Source\RimVore2-Bulges\bin\Debug\RimVore2-Bulges.dll
+F:\Steam\steamapps\common\RimWorld\RimVore2-Bulges\Source\RimVore2-Bulges\bin\Debug\RimVore2-Bulges.pdb
+F:\Steam\steamapps\common\RimWorld\RimVore2-Bulges\Source\RimVore2-Bulges\obj\Debug\RimVore2-Bulges.csproj.AssemblyReference.cache
+F:\Steam\steamapps\common\RimWorld\RimVore2-Bulges\Source\RimVore2-Bulges\obj\Debug\RimVore2-Bulges.csproj.CoreCompileInputs.cache
+F:\Steam\steamapps\common\RimWorld\RimVore2-Bulges\Source\RimVore2-Bulges\obj\Debug\RimVore2-Bulges.dll
+F:\Steam\steamapps\common\RimWorld\RimVore2-Bulges\Source\RimVore2-Bulges\obj\Debug\RimVore2-Bulges.pdb
